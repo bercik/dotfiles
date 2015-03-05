@@ -1,5 +1,5 @@
 snippet cl
-$1class $2
+$1class ${2:`!p snip.rv = snip.basename`}
 {
 	public $2()
 	{
@@ -11,7 +11,7 @@ $1class $2
 endsnippet
 
 snippet clm
-public class $1
+public class `!p snip.rv = snip.basename`
 {
 	public static void main(String[] args)
 	{
@@ -26,6 +26,10 @@ endsnippet
 
 snippet pr
 System.out.print("$1"$2);$0
+endsnippet
+
+snippet prl
+System.out.println("$1"$2);$0
 endsnippet
 
 snippet fo
