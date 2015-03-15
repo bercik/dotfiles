@@ -13,7 +13,12 @@ if has("autocmd")
    autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
 endif
 
-" Delimitmate plugin
+" Delimitmate plugin only for .java and .cpp files
+if has("autocmd")
+   autocmd FileType * let b:delimitMate_autoclose = 0
+   autocmd FileType java let b:delimitMate_autoclose = 1
+   autocmd FileType cpp let b:delimitMate_autoclose = 1
+endif
 let delimitMate_expand_cr = 1
 
 "NERDtree
