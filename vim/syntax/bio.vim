@@ -16,7 +16,7 @@ syn match includeStmts "#INCLUDE(" contains=openPar
 
 syn match def "def" display contained
 syn match function "def\s\+[a-zA-Z_][a-zA-Z0-9_]*\s*(" contains=def,openPar
-syn match functionCall "\(FOR\|IF\|CALL\|BREAK\|CONTINUE\|DN\)\(\s\|\n\)*(" contains=openPar
+syn match functionCall "\(RETURN\|FOR\|IF\|CALL\|BREAK\|CONTINUE\|DN\)\(\s\|\n\)*(" contains=openPar
 
 syn region defEndBlock start="def" end="end" fold transparent
 
