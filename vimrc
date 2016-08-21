@@ -2,16 +2,6 @@ execute pathogen#infect()
 
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_auto_select = 1
-" Disable NeoComplCache for certain filetypes
-if has('autocmd')
-   autocmd FileType java nested NeoComplCacheLock
-endif
-
-" javacomplete only for .java files
-if has("autocmd")
-   autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-   autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
-endif
 
 " Delimitmate plugin only for .java and .cpp files
 if has("autocmd")
@@ -20,9 +10,6 @@ if has("autocmd")
    autocmd FileType cpp let b:delimitMate_autoclose = 1
 endif
 let delimitMate_expand_cr = 1
-
-"NERDtree
-nmap <leader>d :NERDTreeToggle<CR>
 
 " vertical line indentation
 let g:indentLine_color_term = 239
