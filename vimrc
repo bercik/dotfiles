@@ -52,3 +52,7 @@ inoremap jk <Esc>
 nmap <S-Tab> <<
 " for insert mode
 imap <S-Tab> <C-o><<
+
+" increase performance
+set synmaxcol=120
+set nocursorline
