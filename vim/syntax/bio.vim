@@ -23,7 +23,7 @@ syn region defEndBlock start="def" end="end" fold transparent
 
 syn keyword celTodo contained TODO TODELETE
 
-syn match comment "%.*$" contains=celTodo
+syn match comment "@.*$" contains=celTodo
 
 syn match stringEscape "\\[nrfbt\\]" display contained
 syn region string start="\"" skip="\\\"" end="\"" contains=stringEscape
