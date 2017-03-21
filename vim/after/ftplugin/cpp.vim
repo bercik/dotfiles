@@ -16,4 +16,5 @@ execute "normal! o#define " . gatename . " "
 execute "normal! Go#endif /* " . gatename . " */"
 normal! kk
 endfunction
-autocmd BufNewFile *.{H,h,hpp,tpp} call <SID>insert_gates()
+
+autocmd! BufNewFile *.{H,h,hpp,tpp} call <SID>insert_gates()
