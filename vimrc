@@ -31,7 +31,7 @@ set hlsearch
 set number
 
 set t_Co=256
-colorscheme wombat256mod
+colorscheme desert
 
 set mouse=a
 
@@ -56,3 +56,5 @@ imap <S-Tab> <C-o><<
 " increase performance
 set synmaxcol=120
 set nocursorline
+
+set colorcolumn=80
