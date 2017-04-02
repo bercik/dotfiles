@@ -49,9 +49,13 @@ nnoremap <F9> :<C-U> : tabn <CR>
 inoremap jk <Esc>
 
 " for command mode
-nmap <S-Tab> <<
+" nmap <S-Tab> <<
 " for insert mode
-imap <S-Tab> <C-o><<
+" imap <S-Tab> <C-d><<
+" for command mode
+nnoremap <S-Tab> <<
+" for insert mode
+inoremap <S-Tab> <C-d>
 
 " increase performance
 set synmaxcol=120
