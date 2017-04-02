@@ -38,8 +38,8 @@ set mouse=a
 set backspace=2
 
 set expandtab
-set tabstop=3
-set shiftwidth=3
+set tabstop=4
+set shiftwidth=4
 
 filetype plugin on
 
