@@ -61,4 +61,4 @@ inoremap <S-Tab> <C-d>
 set synmaxcol=120
 set nocursorline
 
-set colorcolumn=80
+set colorcolumn=100
